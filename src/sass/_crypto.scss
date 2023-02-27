@@ -1,0 +1,68 @@
+.coin {
+  display: flex;
+  width: 460px;
+  height: 80px;
+  border-radius: 8px;
+  margin: 38px 0;
+  font-family: 'Mukta', sans-serif;
+}
+
+.coin .coin__logo {
+  width: 80px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.coin .coin__logo img {
+  width: 70%;
+  height: 70%;
+}
+.coin .coin__name {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.coin .coin__name h3 {
+  color: #fff;
+  font-style: 26px;
+  text-overflow: uppercase;
+}
+.coin .coin__name span {
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 6px 0 0 2px;
+}
+.coin .coin__price {
+  display: grid;
+  align-items: center;
+  margin-left: auto;
+  padding: 8px 22px 0 0;
+  text-align: right;
+}
+.coin .coin__price .price {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: -5px;
+}
+.coin .coin__price .change {
+  color: #aaa;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: -30px;
+}
+.coin.rising {
+  background-color: linear-gradient(90ged, #202022, #4eb64510);
+}
+.coin.rising .coin__price .price {
+  color: #30ff20;
+}
+.coin.falling {
+  background-color: linear-gradient(90deg, #202022, #aa444425);
+}
+
+.coin.falling .coin__price .price {
+  color: #ff4040;
+}
