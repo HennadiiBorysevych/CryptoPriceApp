@@ -26,8 +26,9 @@
 
 .coin .coin__name h3 {
   color: #fff;
-  font-style: 26px;
+  font-size: 26px;
   text-overflow: uppercase;
+  text-transform: uppercase;
 }
 .coin .coin__name span {
   color: #aaa;
@@ -54,13 +55,13 @@
   margin-top: -30px;
 }
 .coin.rising {
-  background-color: linear-gradient(90ged, #202022, #4eb64510);
+  background: linear-gradient(90deg, #202022, #4eb64510);
 }
 .coin.rising .coin__price .price {
   color: #30ff20;
 }
 .coin.falling {
-  background-color: linear-gradient(90deg, #202022, #aa444425);
+  background: linear-gradient(90deg, #202022, #aa444425);
 }
 
 .coin.falling .coin__price .price {
